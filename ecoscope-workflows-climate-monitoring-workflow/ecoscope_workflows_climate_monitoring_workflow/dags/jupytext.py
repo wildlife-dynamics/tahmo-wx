@@ -579,7 +579,7 @@ precipitation_chart = (
             "legend_title": "Weather Station",
             "hovermode": "closest",
         },
-        smoothing={"method": "spline", "y_min": 0},
+        smoothing={"method": "spline", "y_min": 0, "degree": 2},
         **precipitation_chart_params,
     )
     .mapvalues(argnames=["dataframe"], argvalues=daily_weather)

@@ -408,6 +408,7 @@ def main(params: Params):
                 "smoothing": {
                     "method": "spline",
                     "y_min": 0,
+                    "degree": 2,
                 },
             }
             | (params_dict.get("precipitation_chart") or {}),
