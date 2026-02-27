@@ -112,9 +112,6 @@
               },
               {
                 "$ref": "#/$defs/TemporalGrouper"
-              },
-              {
-                "$ref": "#/$defs/SpatialGrouper"
               }
             ],
             "title": "Group by"
@@ -174,6 +171,24 @@
       "required": [],
       "type": "object",
       "title": "Persist Daily Summary"
+    },
+    "draw_summary_table": {
+      "additionalProperties": false,
+      "properties": {
+        "columns": {
+          "default": null,
+          "items": {
+            "type": "string"
+          },
+          "title": "Columns",
+          "type": "array",
+          "description": "The list of dataframe columns to render in the table. Leave empty to render all columns",
+          "ecoscope:advanced": true
+        }
+      },
+      "required": [],
+      "type": "object",
+      "title": "Draw Summary Table"
     },
     "create_climate_report": {
       "additionalProperties": false,
@@ -297,7 +312,12 @@
     "ValueGrouper": {
       "properties": {
         "index_name": {
-          "oneOf": [],
+          "oneOf": [
+            {
+              "const": "weather_station",
+              "title": "Weather Station"
+            }
+          ],
           "title": "Category",
           "type": "string"
         }
@@ -306,13 +326,7 @@
         "index_name"
       ],
       "title": "Category",
-      "type": "object",
-      "oneOf": [
-        {
-          "const": "weather_station",
-          "title": "Weather Station"
-        }
-      ]
+      "type": "object"
     }
   },
   "uiSchema": {
@@ -344,6 +358,7 @@
       "groupers",
       "persist_observations",
       "persist_daily_summary",
+      "draw_summary_table",
       "create_climate_report"
     ]
   },

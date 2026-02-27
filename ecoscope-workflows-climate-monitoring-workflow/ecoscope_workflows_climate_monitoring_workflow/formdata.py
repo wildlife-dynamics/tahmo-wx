@@ -69,6 +69,17 @@ class PersistDailySummary(BaseModel):
     )
 
 
+class DrawSummaryTable(BaseModel):
+    model_config = ConfigDict(
+        extra="forbid",
+    )
+    columns: list[str] | None = Field(
+        None,
+        description="The list of dataframe columns to render in the table. Leave empty to render all columns",
+        title="Columns",
+    )
+
+
 class CreateClimateReport(BaseModel):
     model_config = ConfigDict(
         extra="forbid",
@@ -110,8 +121,12 @@ class TemporalGrouper(BaseModel):
     temporal_index: TemporalIndex = Field(..., title="Time")
 
 
-class ValueGrouper(Enum):
+class IndexName(str, Enum):
     Weather_Station = "weather_station"
+
+
+class ValueGrouper(BaseModel):
+    index_name: IndexName = Field(..., title="Category")
 
 
 class TimeRange(BaseModel):
@@ -136,7 +151,7 @@ class Groupers(BaseModel):
     model_config = ConfigDict(
         extra="forbid",
     )
-    groupers: list[ValueGrouper | TemporalGrouper | SpatialGrouper] | None = Field(
+    groupers: list[ValueGrouper | TemporalGrouper] | None = Field(
         None,
         description="            Specify how the data should be grouped to create the views for your dashboard.\n            This field is optional; if left blank, all the data will appear in a single view.\n            ",
         title=" ",
@@ -170,6 +185,9 @@ class FormData(BaseModel):
     )
     persist_daily_summary: PersistDailySummary | None = Field(
         None, title="Persist Daily Summary"
+    )
+    draw_summary_table: DrawSummaryTable | None = Field(
+        None, title="Draw Summary Table"
     )
     create_climate_report: CreateClimateReport | None = Field(
         None, title="Create Climate Report"
