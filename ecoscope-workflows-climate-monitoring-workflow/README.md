@@ -16,7 +16,7 @@ installed_requirements:
   version: {version: ==0.22.16}
 - channel: https://repo.prefix.dev/ecoscope-workflows-custom/
   name: ecoscope-workflows-ext-custom
-  version: {version: ==0.0.35.dev0+g3a1a7bef.d20260310}
+  version: {version: ==0.0.35}
 params_sha256: 468dedcbdeaadf911155ea4f1a493a2362edce60abe7070cd578e71f32cf1634
 spec_sha256: c787562f1aa77bf738067dab8b8bf93167e3b00e49e5fd932e092f93d83d4031
 
