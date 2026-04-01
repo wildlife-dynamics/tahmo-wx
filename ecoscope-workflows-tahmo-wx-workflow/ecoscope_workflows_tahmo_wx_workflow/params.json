@@ -194,24 +194,6 @@
       "type": "object",
       "title": "Persist Daily Summary"
     },
-    "draw_summary_table": {
-      "additionalProperties": false,
-      "properties": {
-        "columns": {
-          "default": null,
-          "items": {
-            "type": "string"
-          },
-          "title": "Columns",
-          "type": "array",
-          "description": "The list of dataframe columns to render in the table. Leave empty to render all columns",
-          "ecoscope:advanced": true
-        }
-      },
-      "required": [],
-      "type": "object",
-      "title": "Draw Summary Table"
-    },
     "create_climate_report": {
       "additionalProperties": false,
       "properties": {
@@ -380,7 +362,6 @@
       "groupers",
       "persist_observations",
       "persist_daily_summary",
-      "draw_summary_table",
       "create_climate_report"
     ]
   },

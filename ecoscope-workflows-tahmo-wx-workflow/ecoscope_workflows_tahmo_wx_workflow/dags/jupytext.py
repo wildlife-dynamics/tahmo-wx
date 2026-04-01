@@ -561,7 +561,6 @@ persist_daily_summary = (
 # parameters
 
 draw_summary_table_params = dict(
-    columns=...,
     widget_id=...,
 )
 
@@ -574,6 +573,7 @@ draw_summary_table = (
     .handle_errors()
     .with_tracing()
     .partial(
+        columns=["weather_station", "date", "daily_precipitation", "daily_temperature"],
         table_config={
             "enable_sorting": True,
             "enable_filtering": True,

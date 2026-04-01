@@ -408,6 +408,12 @@ def main(params: Params):
             .with_tracing()
             .set_executor("lithops"),
             partial={
+                "columns": [
+                    "weather_station",
+                    "date",
+                    "daily_precipitation",
+                    "daily_temperature",
+                ],
                 "table_config": {
                     "enable_sorting": True,
                     "enable_filtering": True,
