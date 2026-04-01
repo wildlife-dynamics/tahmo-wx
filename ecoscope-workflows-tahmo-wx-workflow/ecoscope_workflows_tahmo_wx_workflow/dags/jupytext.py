@@ -4,7 +4,7 @@
 # ruff: noqa: E402
 
 # %% [markdown]
-# # Climate Monitoring
+# # Tahmo Wx
 # TODO: top level description
 
 # %% [markdown]

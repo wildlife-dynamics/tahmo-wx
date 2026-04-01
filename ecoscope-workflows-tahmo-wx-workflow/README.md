@@ -5,23 +5,23 @@
 
 ```yaml
 # fingerprint:
-artifacts_sha256_basic: 51b50e329cee2d44d25e00dd08f712b7d887f9a95188956383e2dcd4ba58cbb9
-artifacts_sha256_strict: 0ed7788db6737388939339353aa458524bd87e0119282102801cadce346818db
+artifacts_sha256_basic: 1fb4243e7dd110b03649293f0b081928548d7277038efc0a42798b1294c24ec3
+artifacts_sha256_strict: d8a53c38d95bcb94d3fef769e8e3f01776fa63a97a7eb61046c8f5d9fe6010aa
 installed_requirements:
 - channel: https://repo.prefix.dev/ecoscope-workflows/
   name: ecoscope-workflows-core
-  version: {version: ==0.22.16}
+  version: {version: ==0.22.18}
 - channel: https://repo.prefix.dev/ecoscope-workflows/
   name: ecoscope-workflows-ext-ecoscope
-  version: {version: ==0.22.16}
+  version: {version: ==0.22.18}
 - channel: https://repo.prefix.dev/ecoscope-workflows-custom/
   name: ecoscope-workflows-ext-custom
-  version: {version: ==0.0.35}
+  version: {version: ==0.0.41}
 params_sha256: 49bc3c8b7e835679ced69cfca65a0ad920fa8a1b5044f74c5ed952bcfc7fa837
-spec_sha256: c26964c1bfd7d3621cc13bcccd567a2de19d260de2bfbde7397b50791a8baa9d
+spec_sha256: f7618e66969dfd83fc8e17e58f7a2e53856f163b421656d3be7c9487aa91a157
 
 ```
 
-# ecoscope-workflows-climate-monitoring-workflow
+# ecoscope-workflows-tahmo-wx-workflow
 
 ![](graph.png)

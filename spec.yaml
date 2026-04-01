@@ -1,13 +1,13 @@
-id: climate_monitoring
+id: tahmo_wx
 requirements:
   - name: ecoscope-workflows-core
-    version: ">=0.22.16, <0.23"
+    version: ">=0.22.18, <0.23"
     channel: https://repo.prefix.dev/ecoscope-workflows/
   - name: ecoscope-workflows-ext-ecoscope
-    version: ">=0.22.16, <0.23"
+    version: ">=0.22.18, <0.23"
     channel: https://repo.prefix.dev/ecoscope-workflows/
   - name: ecoscope-workflows-ext-custom
-    version: ">=0.0.35, <0.1.0"
+    version: ">=0.0.41, <0.1.0"
     channel: https://repo.prefix.dev/ecoscope-workflows-custom/
 rjsf-overrides:
   $defs:
@@ -30,7 +30,7 @@ rjsf-overrides:
     filtered_weather_station.properties.values.title: "Weather Station"
     filtered_weather_station.properties.values.description: >-
       Select the interested weather stations by subject names. If None, all weather stations in the subject group will be included. Note that we will always download all observations in the subject group before filtering.
-    create_climate_report.properties.template_path.default: "https://github.com/wildlife-dynamics/wt-climate-monitoring/raw/refs/heads/main/resources/templates/climate_template.docx"
+    create_climate_report.properties.template_path.default: "https://github.com/wildlife-dynamics/tahmo-wx/raw/refs/heads/main/resources/templates/climate_template.docx"
     
 
 workflow:

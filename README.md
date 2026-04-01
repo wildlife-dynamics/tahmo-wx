@@ -36,11 +36,10 @@ Before using this workflow, you need:
 
 ## Installation
 
-1. Open Ecoscope Desktop
-2. Select "Workflow Templates"
-3. Click "+ Add Template"
-4. Copy and paste this URL https://github.com/wildlife-dynamics/wt-climate-monitoring and wait for the workflow template to be downloaded and initialized
-5. The template will now appear in your available template list
+1. Select "Workflow Templates" tab
+2. Click "+ Add Template"
+3. Copy and paste this URL https://github.com/wildlife-dynamics/tahmo-wx and wait for the workflow template to be downloaded and initialized
+4. The template will now appear in your available template list
 
 ## Configuration Guide
 
@@ -194,7 +193,7 @@ Your climate data will be saved in the format(s) you selected:
 
 ### Visual Outputs (Dashboard)
 
-The workflow creates an interactive dashboard with two main visualizations:
+The workflow creates an interactive dashboard with three main visualizations:
 
 #### Daily Precipitation Chart
 - **Format**: Interactive line chart
@@ -215,6 +214,14 @@ The workflow creates an interactive dashboard with two main visualizations:
   - Interactive hover: Shows exact values when you mouse over data points
   - Smooth spline: Shows temperature trends as smooth curves
   - Legend: Identifies each weather station by color
+
+#### Daily Summary Table
+- **Format**: Interactive data table
+- **Features**:
+  - Sortable columns
+  - Filterable rows
+  - Downloadable as CSV
+  - Shows weather station, date, daily precipitation, and daily temperature
 
 ### Climate Report Output
 

@@ -18,7 +18,7 @@ base:
     persist_daily_summary:
       filename_prefix: "climate_summary"
     create_climate_report:
-      template_path: https://github.com/wildlife-dynamics/wt-climate-monitoring/raw/refs/heads/main/resources/templates/climate_template.docx
+      template_path: https://github.com/wildlife-dynamics/tahmo-wx/raw/refs/heads/main/resources/templates/climate_template.docx
 
 weather-station:
   name: Weather Station
@@ -42,7 +42,7 @@ weather-station:
       groupers: 
         - index_name: weather_station
     create_climate_report:
-      template_path: https://github.com/wildlife-dynamics/wt-climate-monitoring/raw/refs/heads/main/resources/templates/climate_template.docx
+      template_path: https://github.com/wildlife-dynamics/tahmo-wx/raw/refs/heads/main/resources/templates/climate_template.docx
 
 double-grouper:
   name: Weather Station Per Month
@@ -64,4 +64,4 @@ double-grouper:
         - index_name: weather_station
         - temporal_index: "%B"
     create_climate_report:
-      template_path: https://github.com/wildlife-dynamics/wt-climate-monitoring/raw/refs/heads/main/resources/templates/climate_template.docx
+      template_path: https://github.com/wildlife-dynamics/tahmo-wx/raw/refs/heads/main/resources/templates/climate_template.docx
