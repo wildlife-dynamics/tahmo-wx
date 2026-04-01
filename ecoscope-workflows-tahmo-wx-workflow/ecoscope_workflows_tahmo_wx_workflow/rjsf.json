@@ -382,7 +382,12 @@
       "persist_daily_summary",
       "draw_summary_table",
       "create_climate_report"
-    ]
+    ],
+    "draw_summary_table": {
+      "columns": {
+        "ui:widget": "hidden"
+      }
+    }
   },
   "additionalProperties": false
 }
