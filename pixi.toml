@@ -1,5 +1,5 @@
 [project]
-name = "wt-climate-monitoring"
+name = "tahmo-wx"
 channels = [
     # Uncomment the following lines to use local channels for development.
     # "file:///tmp/ecoscope-workflows/release/artifacts/",
