@@ -326,6 +326,7 @@ workflow:
           - item_type: timerange
             key: report_date
             value: ${{ workflow.time_range.return }}
+            format: "%b %Y"
           - item_type: image
             key: temperature_chart
             value: ${{ workflow.persist_temperature.return }}

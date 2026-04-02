@@ -632,6 +632,7 @@ def main(params: Params):
                             "item_type": "timerange",
                             "key": "report_date",
                             "value": DependsOn("time_range"),
+                            "format": "%b %Y",
                         },
                         {
                             "item_type": "image",
