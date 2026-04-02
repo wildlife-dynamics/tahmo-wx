@@ -73,17 +73,6 @@ class PersistDailySummary(BaseModel):
     )
 
 
-class DrawSummaryTable(BaseModel):
-    model_config = ConfigDict(
-        extra="forbid",
-    )
-    columns: Optional[List[str]] = Field(
-        None,
-        description="The list of dataframe columns to render in the table. Leave empty to render all columns",
-        title="Columns",
-    )
-
-
 class CreateClimateReport(BaseModel):
     model_config = ConfigDict(
         extra="forbid",
@@ -174,9 +163,6 @@ class FormData(BaseModel):
     )
     persist_daily_summary: Optional[PersistDailySummary] = Field(
         None, title="Persist Daily Summary"
-    )
-    draw_summary_table: Optional[DrawSummaryTable] = Field(
-        None, title="Draw Summary Table"
     )
     create_climate_report: Optional[CreateClimateReport] = Field(
         None, title="Create Climate Report"

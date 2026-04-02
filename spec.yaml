@@ -190,6 +190,7 @@ workflow:
     id: draw_summary_table
     task: draw_table
     partial:
+      columns: ["weather_station", "date", "daily_precipitation", "daily_temperature"]
       table_config:
         enable_sorting: true
         enable_filtering: true

@@ -322,6 +322,12 @@ def main(params: Params):
         .handle_errors()
         .with_tracing()
         .partial(
+            columns=[
+                "weather_station",
+                "date",
+                "daily_precipitation",
+                "daily_temperature",
+            ],
             table_config={
                 "enable_sorting": True,
                 "enable_filtering": True,
