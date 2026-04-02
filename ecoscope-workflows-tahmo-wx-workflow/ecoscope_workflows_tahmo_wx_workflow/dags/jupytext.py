@@ -892,7 +892,12 @@ create_climate_report = (
                     "key": "title",
                     "value": "Climate Monitoring Report",
                 },
-                {"item_type": "timerange", "key": "report_date", "value": time_range},
+                {
+                    "item_type": "timerange",
+                    "key": "report_date",
+                    "value": time_range,
+                    "format": "%b %Y",
+                },
                 {
                     "item_type": "image",
                     "key": "temperature_chart",
